@@ -1069,8 +1069,6 @@
 				TargetAttributes = {
 					22E852C221C1BF5E00DEC873 = {
 						CreatedOnToolsVersion = 10.1;
-						DevelopmentTeam = S2TB4FUFGQ;
-						ProvisioningStyle = Automatic;
 					};
 					6E3C55481EA032DD008F9AC9 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -1387,8 +1385,8 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "Apple Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 181;
 				DEVELOPMENT_TEAM = S2TB4FUFGQ;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1398,7 +1396,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cecose.WWDCScholars.StickerPack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.cecose.WWDCScholars.StickerPack";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1524,7 +1522,7 @@
 				CODE_SIGN_ENTITLEMENTS = WWDCScholars/WWDCScholars.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 181;
+				CURRENT_PROJECT_VERSION = 182;
 				DEVELOPMENT_TEAM = S2TB4FUFGQ;
 				INFOPLIST_FILE = WWDCScholars/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1532,7 +1530,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.3.0;
+				MARKETING_VERSION = 3.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cecose.WWDCScholars-dev";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1549,7 +1547,7 @@
 				CODE_SIGN_ENTITLEMENTS = WWDCScholars/WWDCScholars.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 181;
+				CURRENT_PROJECT_VERSION = 182;
 				DEVELOPMENT_TEAM = S2TB4FUFGQ;
 				INFOPLIST_FILE = WWDCScholars/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1557,7 +1555,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.3.0;
+				MARKETING_VERSION = 3.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cecose.WWDCScholars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1684,7 +1682,7 @@
 				CODE_SIGN_ENTITLEMENTS = WWDCScholars/WWDCScholars.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 181;
+				CURRENT_PROJECT_VERSION = 182;
 				DEVELOPMENT_TEAM = S2TB4FUFGQ;
 				INFOPLIST_FILE = WWDCScholars/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1692,7 +1690,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.3.0;
+				MARKETING_VERSION = 3.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cecose.WWDCScholars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1738,8 +1736,8 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "Apple Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 181;
 				DEVELOPMENT_TEAM = S2TB4FUFGQ;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1749,7 +1747,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cecose.WWDCScholars.StickerPack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.cecose.WWDCScholars.StickerPack";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
