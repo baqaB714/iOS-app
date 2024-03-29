@@ -121,7 +121,7 @@ final class TwitterInteractionController {
 
     func openSafari(withURL url: URL) {
         let safariViewController = SFSafariViewController(url: url)
-        safariViewController.preferredBarTintColor = .scholarsTranslucentPurple
+        safariViewController.preferredBarTintColor = .scholarsPurple
         safariViewController.preferredControlTintColor = .white
         if #available(iOS 13.0, *) {
             safariViewController.modalPresentationStyle = .automatic

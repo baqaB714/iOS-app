@@ -1,34 +1,33 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "Agrume",
-        "repositoryURL": "git@github.com:JanGorman/Agrume.git",
-        "state": {
-          "branch": null,
-          "revision": "c04ce9fd005ae33562993a4d839caeba4a112d34",
-          "version": "5.6.13"
-        }
-      },
-      {
-        "package": "Nuke",
-        "repositoryURL": "git@github.com:kean/Nuke.git",
-        "state": {
-          "branch": null,
-          "revision": "7f73ceaeacd5df75a7994cd82e165ad9ff1815db",
-          "version": "9.6.1"
-        }
-      },
-      {
-        "package": "SwiftyGif",
-        "repositoryURL": "https://github.com/kirualex/SwiftyGif",
-        "state": {
-          "branch": null,
-          "revision": "0cd770feed5807d9fd4fa8df5ad74b56b814b0c8",
-          "version": "5.4.0"
-        }
+  "originHash" : "fb4310be463ea131e83e6f36e73bc8c67c7d8d48b41089780386107ed2cab917",
+  "pins" : [
+    {
+      "identity" : "agrume",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:JanGorman/Agrume.git",
+      "state" : {
+        "revision" : "c04ce9fd005ae33562993a4d839caeba4a112d34",
+        "version" : "5.6.13"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "nuke",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:kean/Nuke.git",
+      "state" : {
+        "revision" : "7f73ceaeacd5df75a7994cd82e165ad9ff1815db",
+        "version" : "9.6.1"
+      }
+    },
+    {
+      "identity" : "swiftygif",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kirualex/SwiftyGif",
+      "state" : {
+        "revision" : "0cd770feed5807d9fd4fa8df5ad74b56b814b0c8",
+        "version" : "5.4.0"
+      }
+    }
+  ],
+  "version" : 3
 }

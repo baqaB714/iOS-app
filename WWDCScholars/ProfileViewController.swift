@@ -133,13 +133,13 @@ final class ProfileViewController: UIViewController {
         } else {
             handleView.isHidden = true
         }
+        
+        
     }
     
     private func configureTeamImageView(){
         if scholar?.fullName == "Sam Eckert" ||
-            scholar?.fullName == "Moritz Sternemann" ||
-            scholar?.fullName == "Andrew Walker" ||
-            scholar?.fullName == "Matthijs Logemann" {
+            scholar?.fullName == "Moritz Sternemann" {
             teamContainerView?.isHidden = false
         }else{
             teamContainerView?.isHidden = true
@@ -165,7 +165,21 @@ final class ProfileViewController: UIViewController {
     @IBAction func closeButtonTapped(_ sender: Any) {
         dismiss(animated: true)
     }
-
+    
+    
+    @IBAction func viewSubmissionButtonAction(_ sender: Any) {
+        guard let unwrappedRecordName = scholarId?.recordName else { return }
+        
+        guard let scholarURL = URL(string: "https://wwdcscholars.com/s/\(unwrappedRecordName)") else { return }
+        print(scholarURL)
+        
+        let safariViewController = SFSafariViewController(url: scholarURL)
+        safariViewController.preferredBarTintColor = .scholarsPurple
+        safariViewController.preferredControlTintColor = .white
+        
+        self.present(safariViewController, animated: true)
+    }
+    
     // MARK: - Private Functions
     
     private func loadScholarData() {
@@ -292,7 +306,12 @@ final class ProfileViewController: UIViewController {
             present(alert, animated: true)
         default:
             guard let url = URL(string: urlString) else { return }
-            vc = SFSafariViewController(url: url)
+            
+            let safariViewController = SFSafariViewController(url: url)
+            safariViewController.preferredBarTintColor = .scholarsPurple
+            safariViewController.preferredControlTintColor = .white
+            
+            vc = safariViewController
         }
         
         if let vc = vc {
