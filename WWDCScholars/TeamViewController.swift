@@ -18,12 +18,6 @@ final class TeamViewController: UIViewController {
     @IBOutlet private weak var scrollView: UIScrollView?
     @IBOutlet private weak var wwdcscholarsLogoImageView: UIImageView?
     @IBOutlet private weak var wwdcscholarsLogoContainerView: UIView?
-
-    // MARK: Andrew
-    @IBOutlet private weak var andrewImageContentView: UIView!
-    @IBOutlet private weak var andrewImageView: UIImageView?
-    @IBOutlet private weak var andrewNameLabel: UILabel?
-    @IBOutlet private weak var andrewDescriptionLabel: UILabel?
     
     // MARK: Sam
     @IBOutlet private weak var samImageContentView: UIView?
@@ -43,12 +37,6 @@ final class TeamViewController: UIViewController {
     @IBOutlet private weak var michieNameLabel: UILabel?
     @IBOutlet private weak var michieDescriptionLabel: UILabel?
     
-    // MARK: Matthijs
-    @IBOutlet private weak var matthijsImageContentView: UIView?
-    @IBOutlet private weak var matthijsImageView: UIImageView?
-    @IBOutlet private weak var matthijsNameLabel: UILabel?
-    @IBOutlet private weak var matthijsDescriptionLabel: UILabel?
-
     
     // MARK: - File Private Properties
     @IBOutlet fileprivate weak var wwdcscholarsTeamBannerImageView: UIImageView!
@@ -83,11 +71,10 @@ final class TeamViewController: UIViewController {
     // MARK: - UI
     
     private func styleUI() {
+        self.navigationController?.navigationBar.backgroundColor = .scholarsPurple
+        
         wwdcscholarsLogoContainerView?.roundCorners()
         wwdcscholarsLogoImageView?.roundCorners()
-
-        andrewImageContentView?.roundCorners()
-        andrewImageView?.roundCorners()
 
         samImageContentView?.roundCorners()
         samImageView?.roundCorners()
@@ -97,9 +84,6 @@ final class TeamViewController: UIViewController {
 
         michieImageContentView?.roundCorners()
         michieImageView?.roundCorners()
-
-        matthijsImageContentView?.roundCorners()
-        matthijsImageView?.roundCorners()
     }
     
     private func configureUI() {
@@ -122,26 +106,16 @@ final class TeamViewController: UIViewController {
     }
     
     private func populateContent() {
-        andrewImageView?.image = UIImage(named: "profile")
-        andrewNameLabel?.text = "Andrew Walker"
-        andrewDescriptionLabel?.text = "“Andrew has been working on iOS applications for 4 1/2 years. He recently interned at Apple after attending WWDC as a scholarship winner for three consecutive years.”"
-        
         samImageView?.image = UIImage(named: "samProfile")
         samNameLabel?.text = "Sam Eckert"
-        samDescriptionLabel?.text = "“Sam started developing iOS apps when he turned 14. He received two WWDC scholarships and is now connecting companies with the young generation at agenZy.”"
+        samDescriptionLabel?.text = "Sam started developing iOS apps when he turned 14. He received two WWDC scholarships (2015 & 2017) and is now creating a futuristic marketing design suite at Linearity."
         
         moritzImageView?.image = UIImage(named: "moritzProfile")
         moritzNameLabel?.text = "Moritz Sternemann"
-        moritzDescriptionLabel?.text = "“Moritz is the most recent addition to our team and mostly worked on the website and the signup form. He attended WWDC as a scholarship winner for two consecutive years.”"
+        moritzDescriptionLabel?.text = "Moritz is the most recent addition to our team and mostly worked on the website and the signup form. He attended WWDC as a scholarship winner for two consecutive years."
         
         michieImageView?.image = UIImage(named: "michieProfile")
         michieNameLabel?.text = "Michie Ang"
-        michieDescriptionLabel?.text = "“Michie was a nurse when she first got into iOS development. She won a scholarship three times, builds tech communities and travels around to inspire others to learn programming.”"
-        
-
-        matthijsImageView?.image = UIImage(named: "matthijsProfile")
-        matthijsNameLabel?.text = "Matthijs Logemann"
-        matthijsDescriptionLabel?.text = "“Matthijs has been developping for iOS for around 8 years, has received two WWDC scholarships and now studies Computer Science at the Eindhoven University of Technology.”"
-        
+        michieDescriptionLabel?.text = "Michie was a nurse when she first got into iOS development. She won a scholarship three times, builds tech communities and travels around to inspire others to learn programming."
     }
 }
