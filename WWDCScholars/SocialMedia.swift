@@ -10,6 +10,9 @@ import Foundation
 import CloudKit
 
 enum SocialMediaType: String{
+    case bluesky
+    case threads
+    case mastodon
     case discord
 	case imessage
 	case itunes
@@ -23,6 +26,9 @@ enum SocialMediaType: String{
 internal class SocialMedia {
     
     // MARK: - Internal Functions
+    internal var bluesky : String?
+    internal var threads : String?
+    internal var mastodon : String?
     internal var discord : String?
     internal var imessage : String?
     internal var itunes : String?
@@ -33,6 +39,9 @@ internal class SocialMedia {
     internal var twitter : String?
     
     internal required init(record: CKRecord) {
+        bluesky = record["bluesky"] as! String?
+        threads = record["threads"] as! String?
+        mastodon = record["mastodon"] as! String?
         discord = record["discord"] as! String?
         imessage = record["imessage"] as! String?
         itunes = record["itunes"] as! String?
