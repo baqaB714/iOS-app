@@ -24,13 +24,37 @@ internal final class ProfileSocialAccountsFactory {
     // MARK: - Internal Functions
     
     internal func accountButtons() -> [SocialAccountButton] {
-        let buttons = [self.facebookButton(), self.twitterButton(), self.linkedInButton(), self.websiteButton(), self.gitHubButton(), self.iMessageButton(), self.discordButton()]
+        let buttons = [self.facebookButton(), self.twitterButton(), self.blueskyButton(), self.threadsButton(), self.mastodonButton(), self.linkedInButton(), self.websiteButton(), self.gitHubButton(), self.iMessageButton(), self.discordButton()]
         let visibleButtons = buttons.compactMap({ ($0 as? SocialAccountButton) })
         
         return visibleButtons
     }
     
     // MARK: - Private Functions
+    
+    private func blueskyButton() -> UIButton? {
+        if let bluesky = self.socialMedia.bluesky, !bluesky.isEmpty {
+            return self.accountButton(withType: .bluesky, url: bluesky)
+        }
+        
+        return nil
+    }
+    
+    private func threadsButton() -> UIButton? {
+        if let threads = self.socialMedia.threads, !threads.isEmpty {
+            return self.accountButton(withType: .threads, url: threads)
+        }
+        
+        return nil
+    }
+    
+    private func mastodonButton() -> UIButton? {
+        if let mastodon = self.socialMedia.mastodon, !mastodon.isEmpty {
+            return self.accountButton(withType: .mastodon, url: mastodon)
+        }
+        
+        return nil
+    }
     
     private func discordButton() -> UIButton? {
         if let discord = self.socialMedia.discord, !discord.isEmpty {
